@@ -1,0 +1,115 @@
+@import "main-componants-style.css";
+
+body{
+    grid-template-rows:150px 1fr 70px;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 100px 700px;
+    grid-template-areas: 
+    "r1"
+    "r2"
+    ;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins-semibold,poppins,sans-serif;
+}
+/*header*/
+
+.header-1{
+    grid-area: r1;
+    height: auto;
+    width: 724px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hd{
+    display: flex;
+    flex-direction: row;
+}
+#dot{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(109, 109, 235);
+    margin-top: 12px;
+    margin-right: 5px;
+}
+#main-title{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+/*form styling*/
+.form-styling{
+    grid-area: r2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "fr1 fr2"
+    "fr3 fr3"
+    "fr4 fr4"
+    "fr5 fr5"
+    ;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    grid-gap:20px;
+    padding: 60px;
+    box-shadow: 3px 3px 5px #c5baae;
+    height: 500;
+    width: 600px;
+    margin-top: 10px;
+}
+.input-1{
+    grid-area: fr1;
+}
+.input-2{
+    grid-area: fr2;
+}
+.input-3{
+    grid-area: fr3;
+}
+.input-4{
+    grid-area: fr4;
+}
+
+.lable-style{
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+.input-style{
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 1px solid #444444;
+}
+#btn{
+    grid-area: fr5;
+    width: 145px;
+    height: 37px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(109, 109, 235);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 440px;
+    float: right;
+    color: #fff;
+}
+#btn:hover{
+    border: 2px solid rgb(109, 109, 235);
+    box-shadow: 3px 3px 5px #c5baae;
+    background-color: #F4ECE6;
+    color: #444444;
+}
+
+@media(min-width:900px){
+    body{
+        grid-template-rows:100px 1fr 70px;
+    }
+}

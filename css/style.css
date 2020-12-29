@@ -1,0 +1,160 @@
+@import "main-componants-style.css";
+
+/*---Start Main Styling---*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+    "c1"
+    "c2"
+    ;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 40px;
+}
+/*aside styling*/
+aside{
+    grid-area: c1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 330px;
+    box-shadow: 3px 3px 5px #c5baae;
+    background-color: #F4ECE6;
+    margin-top: 150px;
+}
+.card .card-info {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.card .card-info #img{
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+}
+.card .card-info .name{
+    margin-top: 16px;
+}
+.card .card-info .job-title{
+    font-size: 20px;
+    letter-spacing:px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.card-li {
+    background-color: #fff;
+    list-style: none;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-li li{
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+/*article styling*/
+
+article {
+    grid-area: c2;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.basic-article{
+    margin-top: 150px;
+}
+#hello{
+    font-size: 80px;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+}
+#breif{
+    margin-bottom: 30px;
+}
+#about-me{
+    margin-top: 30px;
+    padding-left: 60px;
+}
+
+.btn{
+    width: 110px;
+    height: 35px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px #c5baae;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #F4ECE6;
+    margin: 5px;
+}
+.btn a{
+    color: #444444;
+}
+.btn:hover{
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(109, 109, 235);
+}
+.btn a:hover{
+    color: #fff;
+}
+
+#btn-1{
+    background-color:rgb(109, 109, 235) ;
+    border: none;
+}
+#btn-1 a{
+    color: #fff;
+}
+
+/*---End Main Styling----*/ 
+
+/* Large Screens */
+  @media (min-width:900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "c1 c2"
+        ;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 40px;
+    }
+    aside{
+        grid-area: c1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    article {
+        grid-area: c2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:space-between;
+        color: rgb(255, 255, 255);
+    }
+    .basic-article{
+        margin-top: 150px;
+    }
+    #about-me{
+        padding-left: 0px;
+    }
+  }

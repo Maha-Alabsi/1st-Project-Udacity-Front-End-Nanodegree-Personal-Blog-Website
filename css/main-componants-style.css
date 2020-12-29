@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1000px 70px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft"
+    ;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+/*---Start Header Styling---*/
+
+header {
+    grid-area: hd;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-betweence;
+    align-items: center;
+    padding: 0px 10px ;
+}
+
+/*---Styling nav bar---*/
+
+.container nav ul{
+    list-style: none;
+}
+.container nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.container nav ul li a:hover {
+    color: rgb(109, 109, 235);
+  }
+  
+#page-name-color{
+    color: rgb(109, 109, 235);
+}
+/*---Styling personal-headline---*/
+
+.personal-headline{
+    float: left;
+    margin: 10px;
+}
+.name{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Roboto';
+}
+.job-title{
+font-size: 15px;
+}
+
+/*---End Header Styling---*/
+
+/*---Start Main Styling---*/
+
+main{
+    grid-area: main;
+    background-color: #E5D9CD;
+}
+
+/*---End Main Styling---*/
+
+/*---Start Footer Styling---*/
+.footer-styling{
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "c3 c4"
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left{
+    grid-area: c3;
+    margin-left: 40px;
+    font-size: 14px;
+}
+.footer-right{
+    grid-area: c4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-heading{
+    text-transform: capitalize;
+    margin-left: 30px;
+    font-size: 15px;
+    
+}
+.footer-paragraph{
+    font-size: 12px;
+}
+.footer-heading-follow{
+    text-transform: capitalize;
+    margin-left: 45px;
+}
+.footer-li{
+    list-style: none;
+    font-size: 12px;
+}
+.footer-li li{
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+
+/*---End footer Styling----*/
+
+/*Large Screen*/
+@media (min-width:900px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 550px 70px;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "ft"
+        ;
+    }
+    
+    /*---Start Header Styling---*/
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 50px ;
+    }
+    .footer-left{
+        font-size: 15px;
+    }
+    .footer-paragraph{
+        font-size: 15px;
+    }
+    .footer-heading{
+        font-size: 16px;
+    }
+    .footer-li{
+        font-size: 16px;
+    }
+}
+  

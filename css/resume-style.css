@@ -1,0 +1,83 @@
+@import "main-componants-style.css";
+@import "cards.css";
+
+
+#resume{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+button{
+    width: 145px;
+    height: 37px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(109, 109, 235);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-left: 575px;
+    float: right;
+}
+button a{
+    color: #fff;
+}
+button:hover{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px #c5baae;
+    background-color: #F4ECE6;
+}
+button a:hover{
+    color: #444444;
+}
+
+/*---Start cards---*/
+.card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "ca1 ca2";
+    justify-content: center;
+    padding: 80px;
+}
+.position{
+    text-transform: uppercase;
+}
+.info-2{
+    text-transform: capitalize;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.description{
+    grid-area: ca2;
+}
+.card-skills-info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "ra1"
+    "ra2";
+    justify-content: flex-start;
+    padding: 80px;
+    grid-gap:20px;
+}
+.prof-skills{
+    grid-area: ra1;
+    text-transform: capitalize;
+}
+.card-skills-info ul{
+    list-style: none;
+}
+.card-skills-info ul li{
+    margin: 10px;
+}
+.lang{
+    grid-area: ra2;
+    text-transform: capitalize;
+}
+.small-dot{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(109, 109, 235);
+    margin-top: 4px;
+    margin-right: 5px;
+}

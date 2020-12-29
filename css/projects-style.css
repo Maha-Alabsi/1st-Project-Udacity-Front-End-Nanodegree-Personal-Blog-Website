@@ -1,0 +1,39 @@
+@import "main-componants-style.css";
+@import "cards.css";
+
+
+blockquote{
+    font-size: 25px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+}
+.card-info{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: 
+    "cb1 cb2";
+    justify-content: center;
+    width: 724px;
+    height: 350px;
+    
+}
+.basic-info{
+    grid-area: cb1;
+    background-color: #ffffff;
+    padding: 70px;
+}
+.role{
+    text-transform: capitalize;
+}
+.project-img{
+    grid-area: cb2;
+    overflow: hidden;
+}
+
+figcaption{
+    background-color: #F4ECE6;
+    color: #444444;
+    text-transform: capitalize;
+}
+
